@@ -442,11 +442,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\diego\\Escritorio\\API\\API\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\diego\\Escritorio\\CineTec\\API\\API\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\diego\\Escritorio\\API\\API\\API\\API.csproj",
+      "projectPath": "C:\\Users\\diego\\Escritorio\\CineTec\\API\\API\\API\\API.csproj",
       "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\diego\\Escritorio\\API\\API\\API\\obj\\",
+      "outputPath": "C:\\Users\\diego\\Escritorio\\CineTec\\API\\API\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
