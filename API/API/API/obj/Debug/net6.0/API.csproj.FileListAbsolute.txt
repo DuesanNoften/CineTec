@@ -30,3 +30,36 @@ C:\Users\diego\Escritorio\API\API\API\obj\Debug\net6.0\refint\API.dll
 C:\Users\diego\Escritorio\API\API\API\obj\Debug\net6.0\API.pdb
 C:\Users\diego\Escritorio\API\API\API\obj\Debug\net6.0\API.genruntimeconfig.cache
 C:\Users\diego\Escritorio\API\API\API\obj\Debug\net6.0\ref\API.dll
+c:\Users\yangr\Desktop\Git Hub\CineTec\API\API\API\bin\Debug\net6.0\appsettings.Development.json
+c:\Users\yangr\Desktop\Git Hub\CineTec\API\API\API\bin\Debug\net6.0\appsettings.json
+c:\Users\yangr\Desktop\Git Hub\CineTec\API\API\API\bin\Debug\net6.0\API.exe
+c:\Users\yangr\Desktop\Git Hub\CineTec\API\API\API\bin\Debug\net6.0\API.deps.json
+c:\Users\yangr\Desktop\Git Hub\CineTec\API\API\API\bin\Debug\net6.0\API.runtimeconfig.json
+c:\Users\yangr\Desktop\Git Hub\CineTec\API\API\API\bin\Debug\net6.0\API.dll
+c:\Users\yangr\Desktop\Git Hub\CineTec\API\API\API\bin\Debug\net6.0\API.pdb
+c:\Users\yangr\Desktop\Git Hub\CineTec\API\API\API\bin\Debug\net6.0\Microsoft.OpenApi.dll
+c:\Users\yangr\Desktop\Git Hub\CineTec\API\API\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+c:\Users\yangr\Desktop\Git Hub\CineTec\API\API\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+c:\Users\yangr\Desktop\Git Hub\CineTec\API\API\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+c:\Users\yangr\Desktop\Git Hub\CineTec\API\API\API\obj\Debug\net6.0\API.csproj.AssemblyReference.cache
+c:\Users\yangr\Desktop\Git Hub\CineTec\API\API\API\obj\Debug\net6.0\API.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\yangr\Desktop\Git Hub\CineTec\API\API\API\obj\Debug\net6.0\API.AssemblyInfoInputs.cache
+c:\Users\yangr\Desktop\Git Hub\CineTec\API\API\API\obj\Debug\net6.0\API.AssemblyInfo.cs
+c:\Users\yangr\Desktop\Git Hub\CineTec\API\API\API\obj\Debug\net6.0\API.csproj.CoreCompileInputs.cache
+c:\Users\yangr\Desktop\Git Hub\CineTec\API\API\API\obj\Debug\net6.0\API.MvcApplicationPartsAssemblyInfo.cs
+c:\Users\yangr\Desktop\Git Hub\CineTec\API\API\API\obj\Debug\net6.0\API.MvcApplicationPartsAssemblyInfo.cache
+c:\Users\yangr\Desktop\Git Hub\CineTec\API\API\API\obj\Debug\net6.0\API.sourcelink.json
+c:\Users\yangr\Desktop\Git Hub\CineTec\API\API\API\obj\Debug\net6.0\staticwebassets.build.json
+c:\Users\yangr\Desktop\Git Hub\CineTec\API\API\API\obj\Debug\net6.0\staticwebassets.development.json
+c:\Users\yangr\Desktop\Git Hub\CineTec\API\API\API\obj\Debug\net6.0\staticwebassets\msbuild.API.Microsoft.AspNetCore.StaticWebAssets.props
+c:\Users\yangr\Desktop\Git Hub\CineTec\API\API\API\obj\Debug\net6.0\staticwebassets\msbuild.build.API.props
+c:\Users\yangr\Desktop\Git Hub\CineTec\API\API\API\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.API.props
+c:\Users\yangr\Desktop\Git Hub\CineTec\API\API\API\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.API.props
+c:\Users\yangr\Desktop\Git Hub\CineTec\API\API\API\obj\Debug\net6.0\staticwebassets.pack.json
+c:\Users\yangr\Desktop\Git Hub\CineTec\API\API\API\obj\Debug\net6.0\scopedcss\bundle\API.styles.css
+c:\Users\yangr\Desktop\Git Hub\CineTec\API\API\API\obj\Debug\net6.0\API.csproj.CopyComplete
+c:\Users\yangr\Desktop\Git Hub\CineTec\API\API\API\obj\Debug\net6.0\API.dll
+c:\Users\yangr\Desktop\Git Hub\CineTec\API\API\API\obj\Debug\net6.0\refint\API.dll
+c:\Users\yangr\Desktop\Git Hub\CineTec\API\API\API\obj\Debug\net6.0\API.pdb
+c:\Users\yangr\Desktop\Git Hub\CineTec\API\API\API\obj\Debug\net6.0\API.genruntimeconfig.cache
+c:\Users\yangr\Desktop\Git Hub\CineTec\API\API\API\obj\Debug\net6.0\ref\API.dll
