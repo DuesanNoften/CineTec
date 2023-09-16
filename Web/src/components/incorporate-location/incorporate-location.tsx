@@ -1,10 +1,17 @@
-import { createBoard } from '@wixc3/react-board';
-import Classnames from 'classnames';
+import classNames from 'classnames';
+import styles from './incorporate-location.module.scss';
 
-export default createBoard({
-    name: 'LocationIncorporation',
-    Board: () => (
-        <div className="div1">
+export interface IncorporateLocationProps {
+    className?: string;
+}
+
+/**
+ * This component was created using Codux's Default new component template.
+ * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
+ */
+export const IncorporateLocation = ({ className }: IncorporateLocationProps) => {
+    return (
+        <div className={classNames(styles.root, className, 'div1')}>
             <h1>Sucursal</h1>
             <div className="div2">
                 <div className="div3">
@@ -22,6 +29,5 @@ export default createBoard({
             </div>
             <button>Añadir</button>
         </div>
-    ),
-    isSnippet: true,
-});
+    );
+};

@@ -1,10 +1,17 @@
-import { createBoard } from '@wixc3/react-board';
-import Classnames from 'classnames';
+import classNames from 'classnames';
+import styles from './incorporate-movie.module.scss';
 
-export default createBoard({
-    name: 'MoviesIncorporation',
-    Board: () => (
-        <div className="div1">
+export interface IncorporateMovieProps {
+    className?: string;
+}
+
+/**
+ * This component was created using Codux's Default new component template.
+ * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
+ */
+export const IncorporateMovie = ({ className }: IncorporateMovieProps) => {
+    return (
+        <div className={classNames(styles.root, className, 'div1')}>
             <h1>Película</h1>
             <div className="div2">
                 <div className="div3">
@@ -30,6 +37,5 @@ export default createBoard({
             </div>
             <button>Añadir</button>
         </div>
-    ),
-    isSnippet: true,
-});
+    );
+};

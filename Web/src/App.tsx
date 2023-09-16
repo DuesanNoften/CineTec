@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import classNames from 'classnames';
-import { ReactComponent as ReactLogo } from './assets/react.svg';
 import styles from './App.module.scss';
 
 function App() {
@@ -8,15 +6,12 @@ function App() {
 
     return (
         <div className={styles.App}>
+            <img
+                src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                alt=""
+            />
             <div>
-                <a href="https://reactjs.org" target="_blank">
-                    <ReactLogo
-                        height="6em"
-                        width="6em"
-                        className={classNames(styles.logo, styles.react)}
-                        title="React logo"
-                    />
-                </a>
+                <a href="https://reactjs.org" target="_blank"></a>
             </div>
             <div className={styles.card}>
                 <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
