@@ -1,5 +1,18 @@
 import { useState } from 'react';
 import styles from './App.module.scss';
+import * as React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+import Alogin from './components/admin-login/admin-login';
+
+const app = () => (
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<App />} />
+        <Route path="/Alogin" element={<Alogin />} />
+      </Routes>
+    </Router>
+  );
 
 function App() {
     const [count, setCount] = useState(0);
@@ -14,7 +27,7 @@ function App() {
                 <a href="https://reactjs.org" target="_blank"></a>
             </div>
             <div className={styles.card}>
-                <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
+                <button onClick={() => app}></button>
             </div>
         </div>
     );
