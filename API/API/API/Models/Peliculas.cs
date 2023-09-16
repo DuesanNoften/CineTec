@@ -8,7 +8,9 @@
         public int Duration { get; set; }
         public string Characters { get; set; }
         public string Dirctor { get; set; }
-        public double Clasification { get; set; }
+        //public double Clasification { get; set; }
+        public ICollection<Proyeccion> proyeccion { get; set; }
+        public Clasification Clasificacion { get; set; }
 
     }
 }

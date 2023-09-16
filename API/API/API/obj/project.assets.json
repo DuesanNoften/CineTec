@@ -443,11 +443,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
+      "projectUniqueName": "C:\\Users\\diego\\Escritorio\\CineTec\\API\\API\\API\\API.csproj",
+      "projectName": "API",
+      "projectPath": "C:\\Users\\diego\\Escritorio\\CineTec\\API\\API\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\diego\\Escritorio\\CineTec\\API\\API\\API\\obj\\",
+=======
       "projectUniqueName": "c:\\Users\\yangr\\Desktop\\Git Hub\\CineTec\\API\\API\\API\\API.csproj",
       "projectName": "API",
       "projectPath": "c:\\Users\\yangr\\Desktop\\Git Hub\\CineTec\\API\\API\\API\\API.csproj",
       "packagesPath": "C:\\Users\\yangr\\.nuget\\packages\\",
       "outputPath": "c:\\Users\\yangr\\Desktop\\Git Hub\\CineTec\\API\\API\\API\\obj\\",
+>>>>>>> cd7f8ad0b0450bf7c38f16aa3f8dbd2ab3c7fef6
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
