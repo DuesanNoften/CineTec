@@ -437,40 +437,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\yangr\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\diego\\Escritorio\\CineTec\\API\\API\\API\\API.csproj",
+      "projectUniqueName": "d:\\Proyectos\\CineTec\\API\\API\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\diego\\Escritorio\\CineTec\\API\\API\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\diego\\Escritorio\\CineTec\\API\\API\\API\\obj\\",
-=======
-      "projectUniqueName": "c:\\Users\\yangr\\Desktop\\Git Hub\\CineTec\\API\\API\\API\\API.csproj",
-      "projectName": "API",
-      "projectPath": "c:\\Users\\yangr\\Desktop\\Git Hub\\CineTec\\API\\API\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\yangr\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\yangr\\Desktop\\Git Hub\\CineTec\\API\\API\\API\\obj\\",
->>>>>>> cd7f8ad0b0450bf7c38f16aa3f8dbd2ab3c7fef6
+      "projectPath": "d:\\Proyectos\\CineTec\\API\\API\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "d:\\Proyectos\\CineTec\\API\\API\\API\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\yangr\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -483,9 +467,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "default"
       }
     },
     "frameworks": {
@@ -511,19 +492,19 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.20, 6.0.20]"
+            "version": "[6.0.22, 6.0.22]"
           },
           {
             "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[6.0.20, 6.0.20]"
+            "version": "[6.0.22, 6.0.22]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.20, 6.0.20]"
+            "version": "[6.0.22, 6.0.22]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.20, 6.0.20]"
+            "version": "[6.0.22, 6.0.22]"
           }
         ],
         "frameworkReferences": {
@@ -534,8 +515,16 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.7.23376.3\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché d:\\Proyectos\\CineTec\\API\\API\\API\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
