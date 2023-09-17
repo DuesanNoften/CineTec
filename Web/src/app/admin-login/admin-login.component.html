@@ -1,10 +1,18 @@
-<div>
-<h2>Login</h2>
+<nav >
+    <h2>Login</h2>
 
-<p>Usuario</p>
-<input type="text">
+    <p>Usuario</p>
+    <input type="text">
+    
+    <p>Contraseña</p>
+    <input type="password">
 
-<p>Contraseña</p>
-<input type="password">
+    <ul>
+        <button class="btn btn-danger" (click)="enable" routerLink="admin-options">
+            Ingresar
+        </button>
+    </ul>
+</nav>
 
-</div>
+<router-outlet></router-outlet>
+
