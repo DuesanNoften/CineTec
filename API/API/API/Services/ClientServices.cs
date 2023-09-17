@@ -1,3 +1,4 @@
+using System.Text.Json;
 using API.Models;
 
 namespace API.Services;
@@ -6,33 +7,66 @@ public class ClientServices
 {
     private List<ClientDto> _clientsDto = new List<ClientDto>();
 
-        public void Save(ClientDto dtoC)
+        public ClientDto Save(ClientDto dtoC)
         {
             _clientsDto.Add(dtoC);
             WriteArchive(_clientsDto);
-            
+            return dtoC;
         }
 
         public ClientDto Element(int ssn)
         {
-            return _clientsDto.ElementAt(ssn);
+            _clientsDto = LoadArchive();
+            int i = 0;
+            ClientDto target = null;
+            while (i<_clientsDto.Count())
+            {
+                if (_clientsDto.ElementAt(i).Ssn == ssn)
+                {
+                    target = _clientsDto.ElementAt(i);
+                    break;
+                }
+                i++;
+            }
+
+            try
+            {
+                return target;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
 
         public int Size()
         {
+            _clientsDto = LoadArchive();
             return _clientsDto.Count();
         }
 
-        public int Search(int pos)
+        public ClientDto Search(int pos)
         {
-            for (int i = 0; i < Size(); i++)
+            _clientsDto = LoadArchive();
+            try
             {
-                if (Element(i).Ssn == pos)
+                ClientDto target = null;
+                foreach (ClientDto dto in _clientsDto)
                 {
-                    return i;
+                    if (dto.Ssn == pos)
+                    {
+                        return dto;
+                    }
                 }
+
+                return target;
             }
-            return -1;
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
 
         public void Delete(int pos)
@@ -41,11 +75,12 @@ public class ClientServices
             WriteArchive(_clientsDto);
         }
 
-        public void Update(ClientDto dtoC, int pos)
+        public ClientDto Update(ClientDto dtoC, int pos)
         {
             Delete(pos);
             _clientsDto.Insert(pos,dtoC);
             WriteArchive(_clientsDto);
+            return dtoC;
         }
 
         public int Age(ClientDto dtoC)
@@ -60,38 +95,37 @@ public class ClientServices
 
         private void WriteArchive(List<ClientDto> clientsDto)
         {
-            FileStream fileStream = File.Open("./Client.txt", 
-                FileMode.OpenOrCreate, FileAccess.ReadWrite);
-            StreamWriter stream = new StreamWriter(fileStream);
+            StreamWriter stream = new StreamWriter("./Client.txt",true);
             foreach (ClientDto dto in this._clientsDto)
             {
-                string chain = Convert.ToString(dto.Ssn) + "," + Convert.ToString(dto.Name) + ","
-                               + Convert.ToString(dto.CellPhone) + "," + Convert.ToString(dto.Email) + ","
-                               + Convert.ToString(dto.BirthDate);
-                stream.WriteLine(chain);
+                string jsonString = JsonSerializer.Serialize(dto);
+                stream.WriteLine(jsonString);
             }
             stream.Close();
-            fileStream.Close();
         }
+        
 
-        private List<ClientDto> LoadArchive()
+        public List<ClientDto> LoadArchive()
         {
-            StreamReader streamReader = new StreamReader("./Client.txt");
+            var lines = File.ReadAllLines("./Client.txt");
+            
             _clientsDto.Clear();
-            string[] actualRow = null;
-            ClientDto dto = null;
-            while (streamReader.Peek() != 1)
+            ClientDto dto;
+            foreach (var line in lines)
             {
-                dto = new ClientDto();
-                actualRow = streamReader.ReadLine()?.Split(',');
-                dto.Ssn = int.Parse(actualRow.ElementAt(0));
-                dto.Name = actualRow.ElementAt(1);
-                dto.CellPhone = int.Parse(actualRow.ElementAt(2));
-                dto.Email = actualRow.ElementAt(3);
-                dto.BirthDate = DateTime.Parse(actualRow.ElementAt(4));
-                _clientsDto.Add(dto);
+                try
+                {
+                    dto = JsonSerializer.Deserialize<ClientDto>(line);
+                
+                    _clientsDto.Add(dto);
+                    Console.WriteLine(dto.Ssn);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                    throw;
+                }
             }
-            streamReader.Close();
             return _clientsDto;
         }
 }
