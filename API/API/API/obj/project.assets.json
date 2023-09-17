@@ -437,19 +437,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jordy\\.nuget\\packages\\": {}
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\CineTec\\API\\API\\API\\API.csproj",
+      "projectUniqueName": "d:\\Proyectos\\CineTec\\API\\API\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\CineTec\\API\\API\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\jordy\\.nuget\\packages\\",
-      "outputPath": "C:\\CineTec\\API\\API\\API\\obj\\",
+      "projectPath": "d:\\Proyectos\\CineTec\\API\\API\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "d:\\Proyectos\\CineTec\\API\\API\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jordy\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
