@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./admin-login.component.css']
 })
 export class AdminLoginComponent {
+  enable: boolean = true;
 
 }
