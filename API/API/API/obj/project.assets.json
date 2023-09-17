@@ -437,19 +437,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
+    "C:\\Users\\jordy\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Proyectos\\CineTec\\API\\API\\API\\API.csproj",
+      "projectUniqueName": "C:\\CineTec\\API\\API\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "d:\\Proyectos\\CineTec\\API\\API\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "d:\\Proyectos\\CineTec\\API\\API\\API\\obj\\",
+      "projectPath": "C:\\CineTec\\API\\API\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\jordy\\.nuget\\packages\\",
+      "outputPath": "C:\\CineTec\\API\\API\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\jordy\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -518,13 +518,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché d:\\Proyectos\\CineTec\\API\\API\\API\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
