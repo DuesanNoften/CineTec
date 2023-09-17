@@ -11,10 +11,9 @@ public class ClientController
     private ClientServices _clientServices = new ClientServices();
 
     [HttpPost("/client")]
-    public string Save([FromBody] ClientDto dto)
+    public ClientDto Save([FromBody] ClientDto dto)
     {
-        _clientServices.Save(dto);
-        return "Se ha guardado exitosamente";
+        return _clientServices.Save(dto);
     }
 
     [HttpPut ("/client/id")]
@@ -24,8 +23,14 @@ public class ClientController
         return "Datos Actualizados";
     }
 
+    [HttpGet("/client")]
+    public List<ClientDto> GetAll()
+    {
+        return _clientServices.LoadArchive();
+    }
+    
     [HttpGet("/{id:int}/client")]
-    public int Search(int id)
+    public ClientDto Search(int id)
     {
         return _clientServices.Search(id);
     }
@@ -37,16 +42,16 @@ public class ClientController
     }
     
     [HttpGet ("/client/id")]
-    public ClientDto SearchById([FromBody] int pos)
+    public ClientDto SearchById([FromBody] int ssn)
     {
-        return _clientServices.Element(pos);
+        return _clientServices.Element(ssn);
     }
 
     [HttpDelete ("/client/id")]
     public string Delete(int id)
     {
-        int data = Search(id);
-        if (data == -1) return "Cliente no existe";
+        ClientDto data = _clientServices.Search(id);
+        if (data == null) return "Cliente no existe";
         _clientServices.Delete(id);
         return "Cliente Eliminado";
     }
