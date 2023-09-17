@@ -17,10 +17,9 @@ public class ClientController
     }
 
     [HttpPut ("/client/id")]
-    public string Update([FromBody] int id, ClientDto dto)
+    public ClientDto Update( int id,[FromBody] ClientDto dto)
     {
-        _clientServices.Update(dto, id);
-        return "Datos Actualizados";
+        return _clientServices.Update(dto, id);
     }
 
     [HttpGet("/client")]
@@ -41,26 +40,16 @@ public class ClientController
         return _clientServices.Size();
     }
     
-    [HttpGet ("/client/id")]
-    public ClientDto SearchById([FromBody] int ssn)
+    [HttpGet ("/client/ssn")]
+    public ClientDto SearchById(int ssn)
     {
         return _clientServices.Element(ssn);
     }
-
-    [HttpDelete ("/client/id")]
-    public string Delete(int id)
+    
+    [HttpGet ("/client/age")]
+    public int GetAge([FromBody] ClientDto dto)
     {
-        ClientDto data = _clientServices.Search(id);
-        if (data == null) return "Cliente no existe";
-        _clientServices.Delete(id);
-        return "Cliente Eliminado";
+        return _clientServices.Age(dto);
     }
     
-    [HttpGet ("/client/age/id")]
-    public int GetAge(int id)
-    {
-        return _clientServices.Age(_clientServices.Element(id));
-    }
-        
-    //Faltan cosas del video 4
 }

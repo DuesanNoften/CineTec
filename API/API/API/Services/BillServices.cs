@@ -1,3 +1,4 @@
+using System.Text.Json;
 using API.Models;
 
 namespace API.Services;
@@ -5,82 +6,132 @@ namespace API.Services;
 public class BillServices
 {
     private List<BillDto> _billsDto = new List<BillDto>();
-
-        public void Save(BillDto dtoB)
+    
+    public BillDto Save(BillDto dtoC)
         {
-            _billsDto.Add(dtoB);
+            _billsDto.Add(dtoC);
             WriteArchive(_billsDto);
+            return dtoC;
         }
 
         public BillDto Element(int id)
         {
-            return _billsDto.ElementAt(id);
+            _billsDto = LoadArchive();
+            int i = 0;
+            BillDto target = null;
+            while (i<_billsDto.Count())
+            {
+                if (_billsDto.ElementAt(i).IdBill == id)
+                {
+                    target = _billsDto.ElementAt(i);
+                    break;
+                }
+                i++;
+            }
+
+            try
+            {
+                return target;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
 
         public int Size()
         {
+            _billsDto = LoadArchive();
             return _billsDto.Count();
         }
 
-        public int Search(int pos)
+        public BillDto Search(int id)
         {
-            for (int i = 0; i < Size(); i++)
+            _billsDto = LoadArchive();
+            try
             {
-                if (Element(i).IdBill == pos)
+                BillDto target = null;
+                foreach (BillDto dto in _billsDto)
                 {
-                    return i;
+                    if (dto.IdBill == id)
+                    {
+                        return dto;
+                    }
                 }
+
+                return target;
             }
-            return -1;
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
 
-        public void Delete(int pos)
+        public void Delete(int id)
         {
-            _billsDto.RemoveAt(pos);
+            _billsDto = LoadArchive();
+            var i = 0;
+            while (i < _billsDto.Count)
+            {
+                if (_billsDto.ElementAt(i).IdBill==id)
+                {
+                    _billsDto.RemoveAt(i);
+                    WriteArchive(_billsDto);
+                    break;
+                }
+
+                i++;
+            }
+        }
+
+        public BillDto Update(BillDto dtoC, int ssn)
+        {
+            Delete(ssn);
+            _billsDto.Add(dtoC);
             WriteArchive(_billsDto);
+            return dtoC;
         }
 
-        public void Update(BillDto dtoB, int pos)
+        public int Total(BillDto dto)
         {
-            Delete(pos);
-            _billsDto.Insert(pos,dtoB);
-            WriteArchive(_billsDto);
+            return dto.Price * dto.NumSeats;
         }
 
-        private void WriteArchive(List<BillDto> clientsDto)
+        private void WriteArchive(List<BillDto> classificationsDto)
         {
-            FileStream fileStream = File.Open(AppDomain.CurrentDomain.BaseDirectory + "\\Bill.txt", 
-                FileMode.OpenOrCreate, FileAccess.ReadWrite);
-            StreamWriter stream = new StreamWriter(fileStream);
+            StreamWriter stream = new StreamWriter("./Bill.txt",true);
             foreach (BillDto dto in this._billsDto)
             {
-                string chain = Convert.ToString(dto.Ssn) + "," + Convert.ToString(dto.Location) + ","
-                               + Convert.ToString(dto.Screen) + "," + Convert.ToString(dto.Price); //+ ","
-                               //+ Convert.ToString(dto.NumSeats);
-                stream.WriteLine(chain);
+                string jsonString = JsonSerializer.Serialize(dto);
+                stream.WriteLine(jsonString);
             }
             stream.Close();
-            fileStream.Close();
         }
+        
 
-        private List<BillDto> LoadArchive()
+        public List<BillDto> LoadArchive()
         {
-            StreamReader streamReader = new StreamReader("Bill.txt");
+            var lines = File.ReadAllLines("./Bill.txt");
+            
             _billsDto.Clear();
-            string[] actualRow = null;
-            BillDto dto = null;
-            while (streamReader.Peek() != 1)
+            BillDto dto;
+            foreach (var line in lines)
             {
-                dto = new BillDto();
-                actualRow = streamReader.ReadLine()?.Split(',');
-                dto.IdBill = int.Parse(actualRow.ElementAt(0));
-                dto.Ssn = int.Parse(actualRow.ElementAt(1));
-                dto.Location = actualRow.ElementAt(2);
-                dto.Screen = int.Parse(actualRow.ElementAt(3));
-                dto.Price = int.Parse(actualRow.ElementAt(4));
-                _billsDto.Add(dto);
+                try
+                {
+                    dto = JsonSerializer.Deserialize<BillDto>(line);
+                
+                    _billsDto.Add(dto);
+                    Console.WriteLine(dto.IdBill);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                    throw;
+                }
             }
-            streamReader.Close();
             return _billsDto;
         }
 }
