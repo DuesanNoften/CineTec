@@ -1,3 +1,9 @@
+<ul>
+    <button class="btn btn-danger"  [routerLink]="['/location-selection']">
+      Back
+    </button>
+  </ul>
+  
 <nav >
     <h2>Login</h2>
 
@@ -8,20 +14,9 @@
     <input type="password">
 
     <ul>
-        <button class="btn btn-danger" (click)="enable" routerLink="admin-options">
+        <button class="btn btn-danger" [routerLink]="['/admin-options']">
             Ingresar
         </button>
     </ul>
 </nav>
 
-<router-outlet></router-outlet>
-
-<<<<<<< Updated upstream
-=======
-</div>
-
-<button class="btn btn-danger" [routerLink]="['/admin-options']">
-    Log In
-  </button>
-
->>>>>>> Stashed changes
