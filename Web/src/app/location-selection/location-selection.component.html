@@ -4,5 +4,12 @@
     </button>
 </ul>
 
+<select>
+  <option *ngFor="let location of locations" [value]="location">{{location}}</option>
+</select>
 
-<p>location-selection works!</p>
+<ul>
+  <button class="btn btn-primary" [routerLink]="['/movie-selection']">
+    Buscar
+  </button>
+</ul>

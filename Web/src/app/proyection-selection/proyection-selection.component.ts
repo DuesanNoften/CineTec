@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class ProyectionSelectionComponent {
 
+  schedules : string [] = [
+    '6',
+    '8',
+    '9'
+  ];
+
 }

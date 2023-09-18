@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./location-selection.component.css']
 })
 export class LocationSelectionComponent {
+  locations : string[] =
+  [
+    'San José','Alajuela', 'Heredia'
+  ];
 
 }

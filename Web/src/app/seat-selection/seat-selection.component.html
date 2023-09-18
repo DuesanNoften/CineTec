@@ -1,1 +1,24 @@
-<p>seat-selection works!</p>
+<div>
+    <button class="btn btn-danger"  [routerLink]="['/proyection-selection']">
+        Back
+    </button>
+</div>
+
+<div *ngFor="let row of rowsArray">
+    <input type="checkbox" *ngFor="let location of columnsArray" />
+</div>
+
+<p>Cédula</p>
+<input type="text">
+
+<p>Nombre</p>
+<input type="text">
+
+<p>Email</p>
+<input type="text">
+
+<button class="btn btn-primary" >
+    Comprar
+</button>
+
+
