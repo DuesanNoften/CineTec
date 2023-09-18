@@ -20,7 +20,7 @@ export class IncorporateLocationComponent {
   constructor(private apiService: APIService){ };
 
   Post(){
-    this.apiService.postData(JSON.stringify(this.parameter)).subscribe(data => {
+    this.apiService.postData(this.parameter).subscribe(data => {
       this.user = data;
     })
   }
