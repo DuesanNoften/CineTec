@@ -9,7 +9,9 @@
         public string Location { set; get; }
         
         public int Screen { set; get; }
-
+        
+        public int NumSeats { set; get; }
+        
         public int Price { set; get; }
 
     }

@@ -2,7 +2,7 @@
 {
     public class ScreenDto
     {
-        public int Id { get; set; }
+        public int IdScreen { get; set; }
         public string Name { get; set; }
         public int Row { get; set; }
         public int Column { get; set; }

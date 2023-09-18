@@ -69,16 +69,27 @@ public class ClientServices
             }
         }
 
-        public void Delete(int pos)
+        public void Delete(int ssn)
         {
-            _clientsDto.RemoveAt(pos);
-            WriteArchive(_clientsDto);
+            _clientsDto = LoadArchive();
+            var i = 0;
+            while (i < _clientsDto.Count)
+            {
+                if (_clientsDto.ElementAt(i).Ssn==ssn)
+                {
+                    _clientsDto.RemoveAt(i);
+                    WriteArchive(_clientsDto);
+                    break;
+                }
+
+                i++;
+            }
         }
 
-        public ClientDto Update(ClientDto dtoC, int pos)
+        public ClientDto Update(ClientDto dtoC, int ssn)
         {
-            Delete(pos);
-            _clientsDto.Insert(pos,dtoC);
+            Delete(ssn);
+            _clientsDto.Add(dtoC);
             WriteArchive(_clientsDto);
             return dtoC;
         }
