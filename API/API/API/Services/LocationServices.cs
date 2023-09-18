@@ -10,6 +10,7 @@ public class LocationServices
         {
             _locationsDto.Add(dtoC);
             WriteArchive(_locationsDto);
+            Console.WriteLine("Conectado");
             return dtoC;
         }
 
