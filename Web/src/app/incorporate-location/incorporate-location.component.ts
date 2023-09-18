@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { APIService } from '../api.service';
 
 @Component({
   selector: 'app-incorporate-location',
@@ -7,4 +8,24 @@ import { Component } from '@angular/core';
 })
 export class IncorporateLocationComponent {
 
+  user:any; 
+
+  parameter = {
+    IdLocation : 0,
+    Name: '',
+    Place : '',
+    NumScreens : 0
+  }
+  
+  constructor(private apiService: APIService){ };
+
+  Post(){
+    console.log(JSON.stringify(this.parameter))
+    this.apiService.postData(JSON.stringify(this.parameter)).subscribe((result) => 
+    console.warn())
+  }
+
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
 }

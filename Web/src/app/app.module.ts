@@ -17,6 +17,9 @@ import { LocationSelectionComponent } from './location-selection/location-select
 
 import {FormsModule} from '@angular/forms';
 
+import { APIService } from './api.service';
+import { HttpClientModule } from '@angular/common/http'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,8 +38,9 @@ import {FormsModule} from '@angular/forms';
     BrowserModule,
     FormsModule,
     AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
