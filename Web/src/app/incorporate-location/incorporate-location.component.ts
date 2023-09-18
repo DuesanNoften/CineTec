@@ -20,9 +20,9 @@ export class IncorporateLocationComponent {
   constructor(private apiService: APIService){ };
 
   Post(){
-    console.log(JSON.stringify(this.parameter))
-    this.apiService.postData(JSON.stringify(this.parameter)).subscribe((result) => 
-    console.warn())
+    this.apiService.postData(JSON.stringify(this.parameter)).subscribe(data => {
+      this.user = data;
+    })
   }
 
   ngOnInit(): void {
