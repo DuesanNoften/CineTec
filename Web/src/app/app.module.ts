@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { Routes, RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,8 @@ import { MovieSelectionComponent } from './movie-selection/movie-selection.compo
 import { ProyectionSelectionComponent } from './proyection-selection/proyection-selection.component';
 import { SeatSelectionComponent } from './seat-selection/seat-selection.component';
 import { LocationSelectionComponent } from './location-selection/location-selection.component';
+
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,8 @@ import { LocationSelectionComponent } from './location-selection/location-select
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

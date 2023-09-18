@@ -2,21 +2,29 @@
     <button class="btn btn-danger"  [routerLink]="['/location-selection']">
       Back
     </button>
-  </ul>
+</ul>
   
 <nav >
-    <h2>Login</h2>
+  <form (ngSubmit)=" Validar()">
+      <h2>Login</h2>
 
-    <p>Usuario</p>
-    <input type="text">
-    
-    <p>Contraseña</p>
-    <input type="password">
+      <p>Usuario</p>
+      <input type="text" name="Usuario" class="form-control" placeholder="Aqui va el Usuario" [(ngModel)] = "administrador.user" required #User = 'ngModel'>    
+      <p>Contraseña</p>
+      <input type="password" name="Contraseña" class="form-control" placeholder="Aqui va la Contraseña" [(ngModel)] = "administrador.password" required #Password = 'ngModel'>
 
-    <ul>
-        <button class="btn btn-danger" [routerLink]="['/admin-options']">
-            Ingresar
+      <ul>
+          <button class="btn btn-danger"  [disabled]="User.invalid || Password.invalid"  >
+              Ingresar
+          </button>
+      </ul>
+      <ul>
+        <button class="btn btn-danger mx 2" [disabled]="!validated" [routerLink]="['/admin-options']">
+          Submit
         </button>
-    </ul>
+      </ul>
+
+  </form>
 </nav>
 
+{{administrador | json}}
