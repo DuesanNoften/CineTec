@@ -1,0 +1,25 @@
+<ul>
+    <button class="btn btn-danger"  [routerLink]="['/admin-options']">
+        Back
+    </button>
+</ul>
+
+<form (ngSubmit)="Post()">
+    <p>ID Sucursal</p>
+    <input type="number" name = "IdLocation" class="form-control" placeholder="Aqui va el id de la Sucursal" [(ngModel)] = "parameter.IdLocation" required #Id = 'ngModel'>
+
+    <p>Nombre</p>
+    <input type="text" name = "Name" class="form-control" placeholder="Aqui va el Nombre de la Sucursal" [(ngModel)] = "parameter.Name" required #Name = 'ngModel'>
+
+    <p>Lugar</p>
+    <input type="text" name = "Place" class="form-control" placeholder="Aqui va la ubicacion de la Sucursal" [(ngModel)] = "parameter.Place" required #Place = 'ngModel'>
+
+    <p>Numero de Salas</p>
+    <input type="number" name = "NumScreens" class="form-control" placeholder="Aqui va el numero de salas de la Sucursal" [(ngModel)] = "parameter.NumScreens" required #NumS = 'ngModel'>
+
+    <ul>
+        <button class="btn btn-danger" [disabled]="Name.invalid || Id.invalid || Place.invalid || NumS.invalid" >
+            Ingresar
+        </button>
+    </ul>
+</form>

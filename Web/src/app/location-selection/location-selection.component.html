@@ -1,0 +1,15 @@
+<ul>
+    <button class="btn btn-primary" [routerLink]="['/admin-login']">
+      Login
+    </button>
+</ul>
+
+<select>
+  <option *ngFor="let location of locations" [value]="location">{{location}}</option>
+</select>
+
+<ul>
+  <button class="btn btn-primary" [routerLink]="['/movie-selection']">
+    Buscar
+  </button>
+</ul>

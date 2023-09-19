@@ -1,0 +1,4 @@
+{"IdLocation":12,"Name":"Cine Centro","Place":"Contiguo al TEC","NumScreens":3}
+{"IdLocation":12,"Name":"Cine Centro","Place":"Contiguo al TEC","NumScreens":3}
+{"IdLocation":12,"Name":"Cine Centro","Place":"Contiguo al TEC","NumScreens":3}
+{"IdLocation":12,"Name":"Cine Centro","Place":"Contiguo al TEC","NumScreens":3}
