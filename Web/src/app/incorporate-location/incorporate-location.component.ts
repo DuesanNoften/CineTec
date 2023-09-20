@@ -8,20 +8,39 @@ import { APIService } from '../api.service';
 })
 export class IncorporateLocationComponent {
 
-  user:any; 
+  dataLocation:any;
+  dataScreen:any; 
 
-  parameter = {
-    IdLocation : 0,
-    Name: '',
-    Place : '',
-    NumScreens : 0
-  }
   
+  dataL = {
+    idLocation : 0,
+    name: '',
+    place : '',
+    numScreens : 0
+  };
+
+  dataS = {
+    idScreen : 0,
+    name: '',
+    row: 0,
+    column: 0,
+    capacity : 0,
+    locationID : this.dataL
+  }
+
   constructor(private apiService: APIService){ };
 
-  Post(){
-    this.apiService.postData(this.parameter).subscribe(data => {
-      this.user = data;
+  PostL(){
+    this.apiService.postDataLocation(this.dataL).subscribe(data => {
+      console.log(this.dataL)
+      //this.dataLocation = data;
+    })
+  }
+
+  PostS(){
+    this.apiService.postDataScreens(this.dataS).subscribe(data => {
+      console.log(this.PostS)
+      //this.dataScreen = data;
     })
   }
 

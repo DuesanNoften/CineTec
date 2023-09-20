@@ -1,40 +1,32 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\diego\\Escritorio\\CineTec\\API\\API\\API\\API.csproj": {}
-=======
-    "C:\\CineTec\\API\\API\\API\\API.csproj": {}
->>>>>>> 443fc01d14bf952781827a35ef107301a7e4b660
+    "C:\\Users\\yangr\\Desktop\\Git Hub\\CineTec\\API\\API\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\CineTec\\API\\API\\API\\API.csproj": {
+    "C:\\Users\\yangr\\Desktop\\Git Hub\\CineTec\\API\\API\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CineTec\\API\\API\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\yangr\\Desktop\\Git Hub\\CineTec\\API\\API\\API\\API.csproj",
         "projectName": "API",
-<<<<<<< HEAD
-        "projectPath": "C:\\Users\\diego\\Escritorio\\CineTec\\API\\API\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\diego\\Escritorio\\CineTec\\API\\API\\API\\obj\\",
+        "projectPath": "C:\\Users\\yangr\\Desktop\\Git Hub\\CineTec\\API\\API\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\yangr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\yangr\\Desktop\\Git Hub\\CineTec\\API\\API\\API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\yangr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-=======
-        "projectPath": "C:\\CineTec\\API\\API\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\jordy\\.nuget\\packages\\",
-        "outputPath": "C:\\CineTec\\API\\API\\API\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\jordy\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> 443fc01d14bf952781827a35ef107301a7e4b660
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -47,6 +39,9 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "default"
         }
       },
       "frameworks": {
@@ -69,27 +64,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-<<<<<<< HEAD
-=======
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.22, 6.0.22]"
+              "version": "[6.0.20, 6.0.20]"
             },
             {
               "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.22, 6.0.22]"
+              "version": "[6.0.20, 6.0.20]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.22, 6.0.22]"
+              "version": "[6.0.20, 6.0.20]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.22, 6.0.22]"
+              "version": "[6.0.20, 6.0.20]"
             }
           ],
->>>>>>> 443fc01d14bf952781827a35ef107301a7e4b660
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -98,11 +90,7 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
->>>>>>> 443fc01d14bf952781827a35ef107301a7e4b660
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.7.23376.3\\RuntimeIdentifierGraph.json"
         }
       }
     }
