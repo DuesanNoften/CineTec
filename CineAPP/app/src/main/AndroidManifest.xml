@@ -55,9 +55,6 @@
             android:name=".adminMovie.deleteMovie"
             android:exported="false" />
         <activity
-            android:name=".adminMovie.deleteMovie"
-            android:exported="false" />
-        <activity
             android:name=".adminMovie.editMovie"
             android:exported="false" />
         <activity

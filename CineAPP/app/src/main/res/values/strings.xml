@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">CineTec</string>
-    <string name="pelicula">Peliculas</string>
-    <string name="sucursal">Sucursales</string>
+    <string name="pelicula">Cartelera</string>
+    <string name="sucursal">Comprar</string>
     <string name="iniciar_S">Iniciar Sesion</string>
     <string name="registro">Registrarse</string>
     <string name="S1">Oxigeno, Heredia</string>
@@ -42,4 +42,10 @@
     <string name="fecha">Fecha</string>
     <string name="sala">Sala</string>
     <string name="peli">Pelicula</string>
+    <string name="P1">Pelicula 1</string>
+    <string name="P2">Pelicula 2</string>
+    <string name="P3">Pelicula 3</string>
+    <string name="P4">Pelicula 4</string>
+    <string name="P5">Pelicula 5</string>
+
 </resources>
