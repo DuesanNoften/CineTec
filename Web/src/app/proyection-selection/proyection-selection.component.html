@@ -1,15 +1,27 @@
-<div>
-    <button class="btn btn-danger"  [routerLink]="['/movie-selection']">
-        Back
-    </button>
-</div>
 
-<select>
-    <option *ngFor="let schedule of schedules" [value]="schedule">{{schedule}}</option>
-</select>
+<button class="btn btn-danger"  [routerLink]="['/movie-selection']">
+    Back
+</button>
 
-<div>
-    <button class="btn btn-danger"  [routerLink]="['/seat-selection']">
-        Seleccionar
-    </button>
+<div class="container py-4" style="margin: auto;"> 
+
+    <div style="margin: auto; " class="card" > 
+        <br>
+        <h3 [ngStyle]="{'text-align':'center'}">
+            Selecione un horario para ver su película
+        </h3>
+        <br>
+        <select>
+            <option *ngFor="let schedule of schedules" [value]="schedule">{{schedule}}</option>
+        </select>
+
+        <br>
+        
+        <div style="margin: auto;">
+            <button class="btn btn-primary"  [routerLink]="['/seat-selection']">
+                Seleccionar
+            </button>
+        </div>
+    </div>
+    <br>
 </div>

@@ -13,9 +13,11 @@ export class MovieSelectionComponent implements OnInit {
   }
 
   movies: string[] = [
-    'https://es.web.img3.acsta.net/c_310_420/pictures/23/08/30/11/35/1125863.jpg',
-    'https://web-ticketing.novacinemas.cr/CDN/Image/Entity/FilmPosterGraphic/HO00001369',
-    'https://static.cinepolis.com/resources/mx/movies/posters/414x603/43625-576778-20230908013033.jpg'
+    'https://cdn.discordapp.com/attachments/1017681477447712793/1154603143393452042/450_1000.jpg',
+    'https://cdn.discordapp.com/attachments/1017681477447712793/1154603143628329062/e7b670c72cd5a8a683dc9f6c05db801e.jpg',
+    'https://cdn.discordapp.com/attachments/1017681477447712793/1154603143875797022/JOKER-691x1024.jpg',
+    'https://cdn.discordapp.com/attachments/1017681477447712793/1154603144249102336/LOS-IDUS-DE-MARZO.jpg',
+    'https://cdn.discordapp.com/attachments/1017681477447712793/1154603144504942644/poster-peliculas-terror-2019-prodigy-1578395572.jpg'
   ];
   i : number = 0;
 

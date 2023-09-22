@@ -8,9 +8,11 @@ import { Component } from '@angular/core';
 export class ProyectionSelectionComponent {
 
   schedules : string [] = [
-    '6',
-    '8',
-    '9'
+    '6:50 p.m.',
+    '7:00 p.m.',
+    '9:00 p.m.',
+    '9:30 p.m.',
+    '10:00 p.m.'
   ];
 
 }

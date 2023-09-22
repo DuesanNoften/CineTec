@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class LocationSelectionComponent {
   locations : string[] =
   [
-    'San José','Alajuela', 'Heredia'
+    'San José','Alajuela', 'Heredia','Cartago','Guanacaste', 'Limón'
   ];
 
 }
